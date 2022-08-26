@@ -1,0 +1,23 @@
+{
+  "name": "@nelreina/mustache-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --watch src src/example/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nelreina/mustache-template.git"
+  },
+  "keywords": [],
+  "author": "@nelreina",
+  "license": "ISC",
+  "dependencies": {
+    "mustache": "^4.2.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.4.0"
+  }
+}
