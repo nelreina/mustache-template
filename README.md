@@ -6,5 +6,3 @@ Package containing abstraction of mustache.js render function
 
   - args = path and filename
   - return Promise String template
-
-\

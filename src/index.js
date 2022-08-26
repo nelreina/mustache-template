@@ -12,7 +12,11 @@ export const renderTemplate = async (templateName, data, options = {}) => {
     if (mustacheExtension) {
       templateName = templateName + ".mustache";
     }
-    const templatePath = path.join(__dirname, templateName);
+    let templatePath = path.join(__dirname, templateName);
+    templatePath = templatePath.replace(
+      "/node_modules/@nelreina/mustache-template",
+      ""
+    );
     const template = await fs.promises.readFile(templatePath, "utf8");
     return Mustache.render(template, data);
   } catch (error) {
